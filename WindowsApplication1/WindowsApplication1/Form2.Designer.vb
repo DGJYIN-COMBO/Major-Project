@@ -29,6 +29,7 @@ Partial Class Form2
         '
         'VeiwBudgetBTN
         '
+        Me.VeiwBudgetBTN.ForeColor = System.Drawing.Color.Blue
         Me.VeiwBudgetBTN.Location = New System.Drawing.Point(243, 295)
         Me.VeiwBudgetBTN.Name = "VeiwBudgetBTN"
         Me.VeiwBudgetBTN.Size = New System.Drawing.Size(120, 53)
@@ -38,6 +39,7 @@ Partial Class Form2
         '
         'LoadBudgetBTN
         '
+        Me.LoadBudgetBTN.ForeColor = System.Drawing.Color.Blue
         Me.LoadBudgetBTN.Location = New System.Drawing.Point(243, 198)
         Me.LoadBudgetBTN.Name = "LoadBudgetBTN"
         Me.LoadBudgetBTN.Size = New System.Drawing.Size(120, 53)
