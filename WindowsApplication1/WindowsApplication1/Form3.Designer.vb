@@ -22,9 +22,9 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
@@ -50,6 +50,7 @@ Partial Class Form3
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -68,6 +69,8 @@ Partial Class Form3
         '
         'TabPage1
         '
+        Me.TabPage1.BackColor = System.Drawing.Color.LightGray
+        Me.TabPage1.Controls.Add(Me.TextBox8)
         Me.TabPage1.Controls.Add(Me.ComboBox7)
         Me.TabPage1.Controls.Add(Me.ComboBox6)
         Me.TabPage1.Controls.Add(Me.ComboBox5)
@@ -95,7 +98,6 @@ Partial Class Form3
         Me.TabPage1.Size = New System.Drawing.Size(600, 428)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "TabPage1"
-        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'TabPage2
         '
@@ -114,9 +116,9 @@ Partial Class Form3
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(52, 41)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(101, 24)
+        Me.Label1.Size = New System.Drawing.Size(115, 24)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Groceries"
+        Me.Label1.Text = "Vegetables"
         '
         'Label4
         '
@@ -124,9 +126,9 @@ Partial Class Form3
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(52, 299)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(101, 24)
+        Me.Label4.Size = New System.Drawing.Size(52, 24)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Groceries"
+        Me.Label4.Text = "Fruit"
         '
         'Label5
         '
@@ -134,9 +136,9 @@ Partial Class Form3
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(52, 250)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(101, 24)
+        Me.Label5.Size = New System.Drawing.Size(138, 24)
         Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Groceries"
+        Me.Label5.Text = "Canned Food"
         '
         'Label6
         '
@@ -144,9 +146,9 @@ Partial Class Form3
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(52, 210)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(101, 24)
+        Me.Label6.Size = New System.Drawing.Size(65, 24)
         Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Groceries"
+        Me.Label6.Text = "Bread"
         '
         'Label7
         '
@@ -154,9 +156,9 @@ Partial Class Form3
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(52, 169)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(101, 24)
+        Me.Label7.Size = New System.Drawing.Size(71, 24)
         Me.Label7.TabIndex = 6
-        Me.Label7.Text = "Groceries"
+        Me.Label7.Text = "Cereal"
         '
         'Label8
         '
@@ -164,9 +166,9 @@ Partial Class Form3
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(52, 123)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(101, 24)
+        Me.Label8.Size = New System.Drawing.Size(57, 24)
         Me.Label8.TabIndex = 7
-        Me.Label8.Text = "Groceries"
+        Me.Label8.Text = "Dairy"
         '
         'Label9
         '
@@ -174,9 +176,9 @@ Partial Class Form3
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(52, 78)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(101, 24)
+        Me.Label9.Size = New System.Drawing.Size(55, 24)
         Me.Label9.TabIndex = 8
-        Me.Label9.Text = "Groceries"
+        Me.Label9.Text = "Meat"
         '
         'TextBox1
         '
@@ -185,7 +187,7 @@ Partial Class Form3
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 26)
         Me.TextBox1.TabIndex = 9
-        Me.TextBox1.Text = "Price"
+        Me.TextBox1.Text = "Amount"
         '
         'TextBox2
         '
@@ -194,7 +196,7 @@ Partial Class Form3
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 26)
         Me.TextBox2.TabIndex = 10
-        Me.TextBox2.Text = "Price"
+        Me.TextBox2.Text = "Amount"
         '
         'TextBox3
         '
@@ -203,7 +205,7 @@ Partial Class Form3
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 26)
         Me.TextBox3.TabIndex = 11
-        Me.TextBox3.Text = "Price"
+        Me.TextBox3.Text = "Amount"
         '
         'TextBox4
         '
@@ -212,7 +214,7 @@ Partial Class Form3
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 26)
         Me.TextBox4.TabIndex = 12
-        Me.TextBox4.Text = "Price"
+        Me.TextBox4.Text = "Amount"
         '
         'TextBox5
         '
@@ -221,7 +223,7 @@ Partial Class Form3
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(100, 26)
         Me.TextBox5.TabIndex = 13
-        Me.TextBox5.Text = "Price"
+        Me.TextBox5.Text = "Amount"
         '
         'TextBox6
         '
@@ -230,7 +232,7 @@ Partial Class Form3
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(100, 26)
         Me.TextBox6.TabIndex = 14
-        Me.TextBox6.Text = "Price"
+        Me.TextBox6.Text = "Amount"
         '
         'TextBox7
         '
@@ -239,7 +241,7 @@ Partial Class Form3
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(100, 26)
         Me.TextBox7.TabIndex = 15
-        Me.TextBox7.Text = "Price"
+        Me.TextBox7.Text = "Amount"
         '
         'ComboBox1
         '
@@ -259,7 +261,7 @@ Partial Class Form3
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox2.TabIndex = 17
-        Me.ComboBox2.Text = "Weekly"
+        Me.ComboBox2.Text = "Annually"
         '
         'ComboBox3
         '
@@ -269,7 +271,6 @@ Partial Class Form3
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox3.TabIndex = 18
-        Me.ComboBox3.Text = "Weekly"
         '
         'ComboBox4
         '
@@ -279,7 +280,6 @@ Partial Class Form3
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox4.TabIndex = 19
-        Me.ComboBox4.Text = "Weekly"
         '
         'ComboBox5
         '
@@ -289,7 +289,7 @@ Partial Class Form3
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox5.TabIndex = 20
-        Me.ComboBox5.Text = "Weekly"
+        Me.ComboBox5.Text = "Quarterly"
         '
         'ComboBox6
         '
@@ -299,7 +299,7 @@ Partial Class Form3
         Me.ComboBox6.Name = "ComboBox6"
         Me.ComboBox6.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox6.TabIndex = 21
-        Me.ComboBox6.Text = "Weekly"
+        Me.ComboBox6.Text = "Monthly"
         '
         'ComboBox7
         '
@@ -309,24 +309,33 @@ Partial Class Form3
         Me.ComboBox7.Name = "ComboBox7"
         Me.ComboBox7.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox7.TabIndex = 22
-        Me.ComboBox7.Text = "Weekly"
+        Me.ComboBox7.Text = "Fortnightly"
         '
         'Chart1
         '
         Me.Chart1.BorderlineColor = System.Drawing.Color.Coral
-        ChartArea2.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend2)
+        ChartArea3.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea3)
+        Legend3.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend3)
         Me.Chart1.Location = New System.Drawing.Point(58, 33)
         Me.Chart1.Name = "Chart1"
-        Series2.ChartArea = "ChartArea1"
-        Series2.Legend = "Legend1"
-        Series2.Name = "Series1"
-        Me.Chart1.Series.Add(Series2)
+        Series3.ChartArea = "ChartArea1"
+        Series3.Legend = "Legend1"
+        Series3.Name = "Series1"
+        Me.Chart1.Series.Add(Series3)
         Me.Chart1.Size = New System.Drawing.Size(468, 367)
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox8.Location = New System.Drawing.Point(194, 345)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox8.TabIndex = 23
+        Me.TextBox8.Text = "Total"
         '
         'Form3
         '
@@ -369,4 +378,5 @@ Partial Class Form3
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
     Friend WithEvents Chart1 As System.Windows.Forms.DataVisualization.Charting.Chart
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
 End Class
