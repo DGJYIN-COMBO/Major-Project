@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form3
+Partial Class CreateEditBgt
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,12 +22,15 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.SaveBudgetBTN = New System.Windows.Forms.Button()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.TxtTotal2 = New System.Windows.Forms.TextBox()
@@ -50,6 +53,7 @@ Partial Class Form3
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.ComboBox14 = New System.Windows.Forms.ComboBox()
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.ComboBox16 = New System.Windows.Forms.ComboBox()
@@ -76,7 +80,6 @@ Partial Class Form3
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.SaveBudgetBTN = New System.Windows.Forms.Button()
         Me.TabPage3.SuspendLayout()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
@@ -86,6 +89,7 @@ Partial Class Form3
         '
         'TabPage3
         '
+        Me.TabPage3.Controls.Add(Me.Button4)
         Me.TabPage3.Controls.Add(Me.SaveBudgetBTN)
         Me.TabPage3.Controls.Add(Me.Chart1)
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
@@ -95,20 +99,40 @@ Partial Class Form3
         Me.TabPage3.Text = "Graph Page"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
+        'Button4
+        '
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(0, 394)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(83, 36)
+        Me.Button4.TabIndex = 38
+        Me.Button4.Text = "Home"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'SaveBudgetBTN
+        '
+        Me.SaveBudgetBTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SaveBudgetBTN.Location = New System.Drawing.Point(422, 384)
+        Me.SaveBudgetBTN.Name = "SaveBudgetBTN"
+        Me.SaveBudgetBTN.Size = New System.Drawing.Size(168, 36)
+        Me.SaveBudgetBTN.TabIndex = 1
+        Me.SaveBudgetBTN.Text = "Save Budget"
+        Me.SaveBudgetBTN.UseVisualStyleBackColor = True
+        '
         'Chart1
         '
-        ChartArea3.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend3)
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend1)
         Me.Chart1.Location = New System.Drawing.Point(55, 29)
         Me.Chart1.Name = "Chart1"
-        Series3.ChartArea = "ChartArea1"
-        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.PointAndFigure
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Series3.YValuesPerPoint = 2
-        Me.Chart1.Series.Add(Series3)
+        Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.PointAndFigure
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Series1.YValuesPerPoint = 2
+        Me.Chart1.Series.Add(Series1)
         Me.Chart1.Size = New System.Drawing.Size(492, 348)
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
@@ -116,6 +140,7 @@ Partial Class Form3
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.Coral
+        Me.TabPage2.Controls.Add(Me.Button3)
         Me.TabPage2.Controls.Add(Me.Label10)
         Me.TabPage2.Controls.Add(Me.Label11)
         Me.TabPage2.Controls.Add(Me.TxtTotal2)
@@ -143,6 +168,16 @@ Partial Class Form3
         Me.TabPage2.Size = New System.Drawing.Size(600, 430)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Entertainment Budget"
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(0, 394)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(83, 36)
+        Me.Button3.TabIndex = 50
+        Me.Button3.Text = "Home"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Label10
         '
@@ -356,6 +391,7 @@ Partial Class Form3
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.LightGray
+        Me.TabPage1.Controls.Add(Me.Button2)
         Me.TabPage1.Controls.Add(Me.ComboBox14)
         Me.TabPage1.Controls.Add(Me.ComboBox6)
         Me.TabPage1.Controls.Add(Me.ComboBox16)
@@ -387,6 +423,16 @@ Partial Class Form3
         Me.TabPage1.Size = New System.Drawing.Size(600, 430)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Sopping Budget"
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(0, 394)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(83, 36)
+        Me.Button2.TabIndex = 37
+        Me.Button2.Text = "Home"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'ComboBox14
         '
@@ -649,24 +695,15 @@ Partial Class Form3
         Me.TabControl1.Size = New System.Drawing.Size(608, 456)
         Me.TabControl1.TabIndex = 0
         '
-        'SaveBudgetBTN
-        '
-        Me.SaveBudgetBTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SaveBudgetBTN.Location = New System.Drawing.Point(422, 384)
-        Me.SaveBudgetBTN.Name = "SaveBudgetBTN"
-        Me.SaveBudgetBTN.Size = New System.Drawing.Size(168, 36)
-        Me.SaveBudgetBTN.TabIndex = 1
-        Me.SaveBudgetBTN.Text = "Save Budget"
-        Me.SaveBudgetBTN.UseVisualStyleBackColor = True
-        '
-        'Form3
+        'CreateEditBgt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(606, 455)
         Me.Controls.Add(Me.TabControl1)
-        Me.Name = "Form3"
-        Me.Text = "Form3"
+        Me.Name = "CreateEditBgt"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Budget Helper"
         Me.TabPage3.ResumeLayout(False)
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
@@ -729,4 +766,7 @@ Partial Class Form3
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents SaveBudgetBTN As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class
