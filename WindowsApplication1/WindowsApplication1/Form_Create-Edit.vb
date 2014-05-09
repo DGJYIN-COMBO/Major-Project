@@ -10,17 +10,13 @@
 
     Sub CalcuLateTotal()
 
-
+        
 
     End Sub
 
     Private Sub Form3_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
 
-
-    End Sub
-
-    Private Sub SaveBudgetBTN_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SaveBudgetBTN.Click
 
     End Sub
 
@@ -34,7 +30,7 @@
         Me.Close()
     End Sub
 
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HomeBtn.Click
         Form_Home.Show()
         Me.Close()
     End Sub

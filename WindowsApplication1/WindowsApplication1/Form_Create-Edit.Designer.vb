@@ -22,18 +22,18 @@ Partial Class CreateEditBgt
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.HomeBtn = New System.Windows.Forms.Button()
         Me.SaveBudgetBTN = New System.Windows.Forms.Button()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.TotalLbl2 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TxtTotal2 = New System.Windows.Forms.TextBox()
+        Me.EntTotalTxt = New System.Windows.Forms.TextBox()
         Me.TxtGames = New System.Windows.Forms.TextBox()
         Me.TxtInternet = New System.Windows.Forms.TextBox()
         Me.TxtGoingOut = New System.Windows.Forms.TextBox()
@@ -46,12 +46,12 @@ Partial Class CreateEditBgt
         Me.ComboBox10 = New System.Windows.Forms.ComboBox()
         Me.ComboBox12 = New System.Windows.Forms.ComboBox()
         Me.ComboBox13 = New System.Windows.Forms.ComboBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
+        Me.GamesLbl = New System.Windows.Forms.Label()
+        Me.InternetLbl = New System.Windows.Forms.Label()
+        Me.OnlineGmeplyLbl = New System.Windows.Forms.Label()
+        Me.MoviesLbl = New System.Windows.Forms.Label()
+        Me.GoingOutLbl = New System.Windows.Forms.Label()
+        Me.PayTvLbl = New System.Windows.Forms.Label()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ComboBox14 = New System.Windows.Forms.ComboBox()
@@ -61,9 +61,9 @@ Partial Class CreateEditBgt
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TotalLbl1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TxtTotal = New System.Windows.Forms.TextBox()
+        Me.ShopingTotalTxt = New System.Windows.Forms.TextBox()
         Me.TxtMeat = New System.Windows.Forms.TextBox()
         Me.TxtDairy = New System.Windows.Forms.TextBox()
         Me.TxtFruit = New System.Windows.Forms.TextBox()
@@ -72,13 +72,13 @@ Partial Class CreateEditBgt
         Me.TxtCereal = New System.Windows.Forms.TextBox()
         Me.TxtVegetables = New System.Windows.Forms.TextBox()
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.MeatLbl = New System.Windows.Forms.Label()
+        Me.DairyLbl = New System.Windows.Forms.Label()
+        Me.CerealLbl = New System.Windows.Forms.Label()
+        Me.BreadLbl = New System.Windows.Forms.Label()
+        Me.CanFoodLbl = New System.Windows.Forms.Label()
+        Me.FruitLbl = New System.Windows.Forms.Label()
+        Me.VegeLbl = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage3.SuspendLayout()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -89,7 +89,7 @@ Partial Class CreateEditBgt
         '
         'TabPage3
         '
-        Me.TabPage3.Controls.Add(Me.Button4)
+        Me.TabPage3.Controls.Add(Me.HomeBtn)
         Me.TabPage3.Controls.Add(Me.SaveBudgetBTN)
         Me.TabPage3.Controls.Add(Me.Chart1)
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
@@ -99,15 +99,15 @@ Partial Class CreateEditBgt
         Me.TabPage3.Text = "Graph Page"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
-        'Button4
+        'HomeBtn
         '
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(0, 394)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(83, 36)
-        Me.Button4.TabIndex = 38
-        Me.Button4.Text = "Home"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.HomeBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HomeBtn.Location = New System.Drawing.Point(0, 394)
+        Me.HomeBtn.Name = "HomeBtn"
+        Me.HomeBtn.Size = New System.Drawing.Size(83, 36)
+        Me.HomeBtn.TabIndex = 38
+        Me.HomeBtn.Text = "Home"
+        Me.HomeBtn.UseVisualStyleBackColor = True
         '
         'SaveBudgetBTN
         '
@@ -121,18 +121,18 @@ Partial Class CreateEditBgt
         '
         'Chart1
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend2)
         Me.Chart1.Location = New System.Drawing.Point(55, 29)
         Me.Chart1.Name = "Chart1"
-        Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.PointAndFigure
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Series1.YValuesPerPoint = 2
-        Me.Chart1.Series.Add(Series1)
+        Series2.ChartArea = "ChartArea1"
+        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.PointAndFigure
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Series2.YValuesPerPoint = 2
+        Me.Chart1.Series.Add(Series2)
         Me.Chart1.Size = New System.Drawing.Size(492, 348)
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
@@ -141,9 +141,9 @@ Partial Class CreateEditBgt
         '
         Me.TabPage2.BackColor = System.Drawing.Color.Coral
         Me.TabPage2.Controls.Add(Me.Button3)
-        Me.TabPage2.Controls.Add(Me.Label10)
+        Me.TabPage2.Controls.Add(Me.TotalLbl2)
         Me.TabPage2.Controls.Add(Me.Label11)
-        Me.TabPage2.Controls.Add(Me.TxtTotal2)
+        Me.TabPage2.Controls.Add(Me.EntTotalTxt)
         Me.TabPage2.Controls.Add(Me.TxtGames)
         Me.TabPage2.Controls.Add(Me.TxtInternet)
         Me.TabPage2.Controls.Add(Me.TxtGoingOut)
@@ -156,12 +156,12 @@ Partial Class CreateEditBgt
         Me.TabPage2.Controls.Add(Me.ComboBox10)
         Me.TabPage2.Controls.Add(Me.ComboBox12)
         Me.TabPage2.Controls.Add(Me.ComboBox13)
-        Me.TabPage2.Controls.Add(Me.Label12)
-        Me.TabPage2.Controls.Add(Me.Label13)
-        Me.TabPage2.Controls.Add(Me.Label14)
-        Me.TabPage2.Controls.Add(Me.Label15)
-        Me.TabPage2.Controls.Add(Me.Label16)
-        Me.TabPage2.Controls.Add(Me.Label18)
+        Me.TabPage2.Controls.Add(Me.GamesLbl)
+        Me.TabPage2.Controls.Add(Me.InternetLbl)
+        Me.TabPage2.Controls.Add(Me.OnlineGmeplyLbl)
+        Me.TabPage2.Controls.Add(Me.MoviesLbl)
+        Me.TabPage2.Controls.Add(Me.GoingOutLbl)
+        Me.TabPage2.Controls.Add(Me.PayTvLbl)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
@@ -179,15 +179,15 @@ Partial Class CreateEditBgt
         Me.Button3.Text = "Home"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Label10
+        'TotalLbl2
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(35, 297)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(56, 24)
-        Me.Label10.TabIndex = 49
-        Me.Label10.Text = "Total"
+        Me.TotalLbl2.AutoSize = True
+        Me.TotalLbl2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotalLbl2.Location = New System.Drawing.Point(35, 297)
+        Me.TotalLbl2.Name = "TotalLbl2"
+        Me.TotalLbl2.Size = New System.Drawing.Size(56, 24)
+        Me.TotalLbl2.TabIndex = 49
+        Me.TotalLbl2.Text = "Total"
         '
         'Label11
         '
@@ -199,14 +199,14 @@ Partial Class CreateEditBgt
         Me.Label11.TabIndex = 48
         Me.Label11.Text = "Amount"
         '
-        'TxtTotal2
+        'EntTotalTxt
         '
-        Me.TxtTotal2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTotal2.Location = New System.Drawing.Point(212, 295)
-        Me.TxtTotal2.Name = "TxtTotal2"
-        Me.TxtTotal2.Size = New System.Drawing.Size(100, 26)
-        Me.TxtTotal2.TabIndex = 47
-        Me.TxtTotal2.Text = "$"
+        Me.EntTotalTxt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EntTotalTxt.Location = New System.Drawing.Point(212, 295)
+        Me.EntTotalTxt.Name = "EntTotalTxt"
+        Me.EntTotalTxt.Size = New System.Drawing.Size(100, 26)
+        Me.EntTotalTxt.TabIndex = 47
+        Me.EntTotalTxt.Text = "$"
         '
         'TxtGames
         '
@@ -328,65 +328,65 @@ Partial Class CreateEditBgt
         Me.ComboBox13.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox13.TabIndex = 40
         '
-        'Label12
+        'GamesLbl
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(35, 76)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(75, 24)
-        Me.Label12.TabIndex = 32
-        Me.Label12.Text = "Games"
+        Me.GamesLbl.AutoSize = True
+        Me.GamesLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GamesLbl.Location = New System.Drawing.Point(35, 76)
+        Me.GamesLbl.Name = "GamesLbl"
+        Me.GamesLbl.Size = New System.Drawing.Size(75, 24)
+        Me.GamesLbl.TabIndex = 32
+        Me.GamesLbl.Text = "Games"
         '
-        'Label13
+        'InternetLbl
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(35, 121)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(80, 24)
-        Me.Label13.TabIndex = 31
-        Me.Label13.Text = "Internet"
+        Me.InternetLbl.AutoSize = True
+        Me.InternetLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InternetLbl.Location = New System.Drawing.Point(35, 121)
+        Me.InternetLbl.Name = "InternetLbl"
+        Me.InternetLbl.Size = New System.Drawing.Size(80, 24)
+        Me.InternetLbl.TabIndex = 31
+        Me.InternetLbl.Text = "Internet"
         '
-        'Label14
+        'OnlineGmeplyLbl
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(35, 167)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(171, 24)
-        Me.Label14.TabIndex = 30
-        Me.Label14.Text = "Online Gameplay"
+        Me.OnlineGmeplyLbl.AutoSize = True
+        Me.OnlineGmeplyLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OnlineGmeplyLbl.Location = New System.Drawing.Point(35, 167)
+        Me.OnlineGmeplyLbl.Name = "OnlineGmeplyLbl"
+        Me.OnlineGmeplyLbl.Size = New System.Drawing.Size(171, 24)
+        Me.OnlineGmeplyLbl.TabIndex = 30
+        Me.OnlineGmeplyLbl.Text = "Online Gameplay"
         '
-        'Label15
+        'MoviesLbl
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(35, 208)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(76, 24)
-        Me.Label15.TabIndex = 29
-        Me.Label15.Text = "Movies"
+        Me.MoviesLbl.AutoSize = True
+        Me.MoviesLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MoviesLbl.Location = New System.Drawing.Point(35, 208)
+        Me.MoviesLbl.Name = "MoviesLbl"
+        Me.MoviesLbl.Size = New System.Drawing.Size(76, 24)
+        Me.MoviesLbl.TabIndex = 29
+        Me.MoviesLbl.Text = "Movies"
         '
-        'Label16
+        'GoingOutLbl
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(35, 248)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(105, 24)
-        Me.Label16.TabIndex = 28
-        Me.Label16.Text = "Going Out"
+        Me.GoingOutLbl.AutoSize = True
+        Me.GoingOutLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GoingOutLbl.Location = New System.Drawing.Point(35, 248)
+        Me.GoingOutLbl.Name = "GoingOutLbl"
+        Me.GoingOutLbl.Size = New System.Drawing.Size(105, 24)
+        Me.GoingOutLbl.TabIndex = 28
+        Me.GoingOutLbl.Text = "Going Out"
         '
-        'Label18
+        'PayTvLbl
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(35, 39)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(138, 24)
-        Me.Label18.TabIndex = 26
-        Me.Label18.Text = "Austar/Foxtell"
+        Me.PayTvLbl.AutoSize = True
+        Me.PayTvLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PayTvLbl.Location = New System.Drawing.Point(35, 39)
+        Me.PayTvLbl.Name = "PayTvLbl"
+        Me.PayTvLbl.Size = New System.Drawing.Size(73, 24)
+        Me.PayTvLbl.TabIndex = 26
+        Me.PayTvLbl.Text = "Pay Tv"
         '
         'TabPage1
         '
@@ -399,9 +399,9 @@ Partial Class CreateEditBgt
         Me.TabPage1.Controls.Add(Me.ComboBox4)
         Me.TabPage1.Controls.Add(Me.ComboBox3)
         Me.TabPage1.Controls.Add(Me.ComboBox2)
-        Me.TabPage1.Controls.Add(Me.Label3)
+        Me.TabPage1.Controls.Add(Me.TotalLbl1)
         Me.TabPage1.Controls.Add(Me.Label2)
-        Me.TabPage1.Controls.Add(Me.TxtTotal)
+        Me.TabPage1.Controls.Add(Me.ShopingTotalTxt)
         Me.TabPage1.Controls.Add(Me.TxtMeat)
         Me.TabPage1.Controls.Add(Me.TxtDairy)
         Me.TabPage1.Controls.Add(Me.TxtFruit)
@@ -410,13 +410,13 @@ Partial Class CreateEditBgt
         Me.TabPage1.Controls.Add(Me.TxtCereal)
         Me.TabPage1.Controls.Add(Me.TxtVegetables)
         Me.TabPage1.Controls.Add(Me.ComboBox7)
-        Me.TabPage1.Controls.Add(Me.Label9)
-        Me.TabPage1.Controls.Add(Me.Label8)
-        Me.TabPage1.Controls.Add(Me.Label7)
-        Me.TabPage1.Controls.Add(Me.Label6)
-        Me.TabPage1.Controls.Add(Me.Label5)
-        Me.TabPage1.Controls.Add(Me.Label4)
-        Me.TabPage1.Controls.Add(Me.Label1)
+        Me.TabPage1.Controls.Add(Me.MeatLbl)
+        Me.TabPage1.Controls.Add(Me.DairyLbl)
+        Me.TabPage1.Controls.Add(Me.CerealLbl)
+        Me.TabPage1.Controls.Add(Me.BreadLbl)
+        Me.TabPage1.Controls.Add(Me.CanFoodLbl)
+        Me.TabPage1.Controls.Add(Me.FruitLbl)
+        Me.TabPage1.Controls.Add(Me.VegeLbl)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
@@ -511,15 +511,15 @@ Partial Class CreateEditBgt
         Me.ComboBox2.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox2.TabIndex = 27
         '
-        'Label3
+        'TotalLbl1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(52, 360)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(56, 24)
-        Me.Label3.TabIndex = 25
-        Me.Label3.Text = "Total"
+        Me.TotalLbl1.AutoSize = True
+        Me.TotalLbl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotalLbl1.Location = New System.Drawing.Point(52, 360)
+        Me.TotalLbl1.Name = "TotalLbl1"
+        Me.TotalLbl1.Size = New System.Drawing.Size(56, 24)
+        Me.TotalLbl1.TabIndex = 25
+        Me.TotalLbl1.Text = "Total"
         '
         'Label2
         '
@@ -531,14 +531,14 @@ Partial Class CreateEditBgt
         Me.Label2.TabIndex = 24
         Me.Label2.Text = "Amount"
         '
-        'TxtTotal
+        'ShopingTotalTxt
         '
-        Me.TxtTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTotal.Location = New System.Drawing.Point(194, 354)
-        Me.TxtTotal.Name = "TxtTotal"
-        Me.TxtTotal.Size = New System.Drawing.Size(100, 26)
-        Me.TxtTotal.TabIndex = 23
-        Me.TxtTotal.Text = "$"
+        Me.ShopingTotalTxt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ShopingTotalTxt.Location = New System.Drawing.Point(194, 354)
+        Me.ShopingTotalTxt.Name = "ShopingTotalTxt"
+        Me.ShopingTotalTxt.Size = New System.Drawing.Size(100, 26)
+        Me.ShopingTotalTxt.TabIndex = 23
+        Me.ShopingTotalTxt.Text = "$"
         '
         'TxtMeat
         '
@@ -614,75 +614,75 @@ Partial Class CreateEditBgt
         Me.ComboBox7.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox7.TabIndex = 22
         '
-        'Label9
+        'MeatLbl
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(52, 78)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(55, 24)
-        Me.Label9.TabIndex = 8
-        Me.Label9.Text = "Meat"
+        Me.MeatLbl.AutoSize = True
+        Me.MeatLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MeatLbl.Location = New System.Drawing.Point(52, 78)
+        Me.MeatLbl.Name = "MeatLbl"
+        Me.MeatLbl.Size = New System.Drawing.Size(55, 24)
+        Me.MeatLbl.TabIndex = 8
+        Me.MeatLbl.Text = "Meat"
         '
-        'Label8
+        'DairyLbl
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(52, 123)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(57, 24)
-        Me.Label8.TabIndex = 7
-        Me.Label8.Text = "Dairy"
+        Me.DairyLbl.AutoSize = True
+        Me.DairyLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DairyLbl.Location = New System.Drawing.Point(52, 123)
+        Me.DairyLbl.Name = "DairyLbl"
+        Me.DairyLbl.Size = New System.Drawing.Size(57, 24)
+        Me.DairyLbl.TabIndex = 7
+        Me.DairyLbl.Text = "Dairy"
         '
-        'Label7
+        'CerealLbl
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(52, 169)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(71, 24)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "Cereal"
+        Me.CerealLbl.AutoSize = True
+        Me.CerealLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CerealLbl.Location = New System.Drawing.Point(52, 169)
+        Me.CerealLbl.Name = "CerealLbl"
+        Me.CerealLbl.Size = New System.Drawing.Size(71, 24)
+        Me.CerealLbl.TabIndex = 6
+        Me.CerealLbl.Text = "Cereal"
         '
-        'Label6
+        'BreadLbl
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(52, 210)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(65, 24)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Bread"
+        Me.BreadLbl.AutoSize = True
+        Me.BreadLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BreadLbl.Location = New System.Drawing.Point(52, 210)
+        Me.BreadLbl.Name = "BreadLbl"
+        Me.BreadLbl.Size = New System.Drawing.Size(65, 24)
+        Me.BreadLbl.TabIndex = 5
+        Me.BreadLbl.Text = "Bread"
         '
-        'Label5
+        'CanFoodLbl
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(52, 250)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(138, 24)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Canned Food"
+        Me.CanFoodLbl.AutoSize = True
+        Me.CanFoodLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CanFoodLbl.Location = New System.Drawing.Point(52, 250)
+        Me.CanFoodLbl.Name = "CanFoodLbl"
+        Me.CanFoodLbl.Size = New System.Drawing.Size(138, 24)
+        Me.CanFoodLbl.TabIndex = 4
+        Me.CanFoodLbl.Text = "Canned Food"
         '
-        'Label4
+        'FruitLbl
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(52, 299)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(52, 24)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Fruit"
+        Me.FruitLbl.AutoSize = True
+        Me.FruitLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FruitLbl.Location = New System.Drawing.Point(52, 299)
+        Me.FruitLbl.Name = "FruitLbl"
+        Me.FruitLbl.Size = New System.Drawing.Size(52, 24)
+        Me.FruitLbl.TabIndex = 3
+        Me.FruitLbl.Text = "Fruit"
         '
-        'Label1
+        'VegeLbl
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(52, 41)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(115, 24)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Vegetables"
+        Me.VegeLbl.AutoSize = True
+        Me.VegeLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VegeLbl.Location = New System.Drawing.Point(52, 41)
+        Me.VegeLbl.Name = "VegeLbl"
+        Me.VegeLbl.Size = New System.Drawing.Size(115, 24)
+        Me.VegeLbl.TabIndex = 0
+        Me.VegeLbl.Text = "Vegetables"
         '
         'TabControl1
         '
@@ -717,9 +717,9 @@ Partial Class CreateEditBgt
     Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
     Friend WithEvents Chart1 As System.Windows.Forms.DataVisualization.Charting.Chart
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
-    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents TotalLbl2 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents TxtTotal2 As System.Windows.Forms.TextBox
+    Friend WithEvents EntTotalTxt As System.Windows.Forms.TextBox
     Friend WithEvents TxtGames As System.Windows.Forms.TextBox
     Friend WithEvents TxtInternet As System.Windows.Forms.TextBox
     Friend WithEvents TxtGoingOut As System.Windows.Forms.TextBox
@@ -732,12 +732,12 @@ Partial Class CreateEditBgt
     Friend WithEvents ComboBox10 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox12 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox13 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents GamesLbl As System.Windows.Forms.Label
+    Friend WithEvents InternetLbl As System.Windows.Forms.Label
+    Friend WithEvents OnlineGmeplyLbl As System.Windows.Forms.Label
+    Friend WithEvents MoviesLbl As System.Windows.Forms.Label
+    Friend WithEvents GoingOutLbl As System.Windows.Forms.Label
+    Friend WithEvents PayTvLbl As System.Windows.Forms.Label
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents ComboBox14 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox6 As System.Windows.Forms.ComboBox
@@ -746,9 +746,9 @@ Partial Class CreateEditBgt
     Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents TotalLbl1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TxtTotal As System.Windows.Forms.TextBox
+    Friend WithEvents ShopingTotalTxt As System.Windows.Forms.TextBox
     Friend WithEvents TxtMeat As System.Windows.Forms.TextBox
     Friend WithEvents TxtDairy As System.Windows.Forms.TextBox
     Friend WithEvents TxtFruit As System.Windows.Forms.TextBox
@@ -757,16 +757,16 @@ Partial Class CreateEditBgt
     Friend WithEvents TxtCereal As System.Windows.Forms.TextBox
     Friend WithEvents TxtVegetables As System.Windows.Forms.TextBox
     Friend WithEvents ComboBox7 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents MeatLbl As System.Windows.Forms.Label
+    Friend WithEvents DairyLbl As System.Windows.Forms.Label
+    Friend WithEvents CerealLbl As System.Windows.Forms.Label
+    Friend WithEvents BreadLbl As System.Windows.Forms.Label
+    Friend WithEvents CanFoodLbl As System.Windows.Forms.Label
+    Friend WithEvents FruitLbl As System.Windows.Forms.Label
+    Friend WithEvents VegeLbl As System.Windows.Forms.Label
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents SaveBudgetBTN As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents HomeBtn As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

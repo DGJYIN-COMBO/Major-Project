@@ -1,16 +1,16 @@
 ﻿Public Class BudgetViewer
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HomeBtn.Click
         Form_Home.Show()
         Me.Close()
     End Sub
 
-    Private Sub LoadBudgetBTN_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LoadBudgetBTN.Click
+    Private Sub LoadBudgetBTN_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditBtn.Click
         CreateEditBgt.Show()
         Me.Close()
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DeleteBtn.Click
         ' Sub RemoveACar()
 
         'Dim selection As Integer

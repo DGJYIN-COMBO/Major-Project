@@ -23,9 +23,9 @@ Partial Class BudgetViewer
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.LoadBudgetBTN = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.EditBtn = New System.Windows.Forms.Button()
+        Me.DeleteBtn = New System.Windows.Forms.Button()
+        Me.HomeBtn = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ListBox1
@@ -36,44 +36,44 @@ Partial Class BudgetViewer
         Me.ListBox1.Size = New System.Drawing.Size(582, 212)
         Me.ListBox1.TabIndex = 0
         '
-        'LoadBudgetBTN
+        'EditBtn
         '
-        Me.LoadBudgetBTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LoadBudgetBTN.Location = New System.Drawing.Point(43, 302)
-        Me.LoadBudgetBTN.Name = "LoadBudgetBTN"
-        Me.LoadBudgetBTN.Size = New System.Drawing.Size(145, 70)
-        Me.LoadBudgetBTN.TabIndex = 2
-        Me.LoadBudgetBTN.Text = "Edit Budget"
-        Me.LoadBudgetBTN.UseVisualStyleBackColor = True
+        Me.EditBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EditBtn.Location = New System.Drawing.Point(43, 302)
+        Me.EditBtn.Name = "EditBtn"
+        Me.EditBtn.Size = New System.Drawing.Size(145, 70)
+        Me.EditBtn.TabIndex = 2
+        Me.EditBtn.Text = "Edit Budget"
+        Me.EditBtn.UseVisualStyleBackColor = True
         '
-        'Button1
+        'DeleteBtn
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(404, 302)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(145, 70)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Delete Budget"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.DeleteBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteBtn.Location = New System.Drawing.Point(404, 302)
+        Me.DeleteBtn.Name = "DeleteBtn"
+        Me.DeleteBtn.Size = New System.Drawing.Size(145, 70)
+        Me.DeleteBtn.TabIndex = 3
+        Me.DeleteBtn.Text = "Delete Budget"
+        Me.DeleteBtn.UseVisualStyleBackColor = True
         '
-        'Button2
+        'HomeBtn
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(225, 302)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(145, 70)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Home"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.HomeBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HomeBtn.Location = New System.Drawing.Point(225, 302)
+        Me.HomeBtn.Name = "HomeBtn"
+        Me.HomeBtn.Size = New System.Drawing.Size(145, 70)
+        Me.HomeBtn.TabIndex = 4
+        Me.HomeBtn.Text = "Home"
+        Me.HomeBtn.UseVisualStyleBackColor = True
         '
         'BudgetViewer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(606, 455)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.LoadBudgetBTN)
+        Me.Controls.Add(Me.HomeBtn)
+        Me.Controls.Add(Me.DeleteBtn)
+        Me.Controls.Add(Me.EditBtn)
         Me.Controls.Add(Me.ListBox1)
         Me.Name = "BudgetViewer"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -82,7 +82,7 @@ Partial Class BudgetViewer
 
     End Sub
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
-    Friend WithEvents LoadBudgetBTN As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents EditBtn As System.Windows.Forms.Button
+    Friend WithEvents DeleteBtn As System.Windows.Forms.Button
+    Friend WithEvents HomeBtn As System.Windows.Forms.Button
 End Class
