@@ -6,8 +6,7 @@
     End Sub
 
     Private Sub LoadBudgetBTN_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditBtn.Click
-        CreateEditBgt.Show()
-        Me.Close()
+        
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DeleteBtn.Click

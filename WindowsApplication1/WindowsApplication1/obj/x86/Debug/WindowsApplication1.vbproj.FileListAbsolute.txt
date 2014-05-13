@@ -8,4 +8,4 @@ H:\SoftwareMajor\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsAp
 H:\SoftwareMajor\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
 H:\SoftwareMajor\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Form_Home.resources
 H:\SoftwareMajor\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.BudgetViewer.resources
-H:\SoftwareMajor\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.CreateEditBgt.resources
+H:\SoftwareMajor\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Form1.resources

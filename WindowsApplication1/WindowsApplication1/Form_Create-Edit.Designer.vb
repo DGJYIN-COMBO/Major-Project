@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class CreateEditBgt
+Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -80,6 +80,8 @@ Partial Class CreateEditBgt
         Me.FruitLbl = New System.Windows.Forms.Label()
         Me.VegeLbl = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.TabPage3.SuspendLayout()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
@@ -89,6 +91,7 @@ Partial Class CreateEditBgt
         '
         'TabPage3
         '
+        Me.TabPage3.Controls.Add(Me.TextBox1)
         Me.TabPage3.Controls.Add(Me.HomeBtn)
         Me.TabPage3.Controls.Add(Me.SaveBudgetBTN)
         Me.TabPage3.Controls.Add(Me.Chart1)
@@ -104,9 +107,9 @@ Partial Class CreateEditBgt
         Me.HomeBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HomeBtn.Location = New System.Drawing.Point(0, 394)
         Me.HomeBtn.Name = "HomeBtn"
-        Me.HomeBtn.Size = New System.Drawing.Size(83, 36)
+        Me.HomeBtn.Size = New System.Drawing.Size(159, 36)
         Me.HomeBtn.TabIndex = 38
-        Me.HomeBtn.Text = "Home"
+        Me.HomeBtn.Text = "Create Chart"
         Me.HomeBtn.UseVisualStyleBackColor = True
         '
         'SaveBudgetBTN
@@ -116,7 +119,7 @@ Partial Class CreateEditBgt
         Me.SaveBudgetBTN.Name = "SaveBudgetBTN"
         Me.SaveBudgetBTN.Size = New System.Drawing.Size(168, 36)
         Me.SaveBudgetBTN.TabIndex = 1
-        Me.SaveBudgetBTN.Text = "Save Budget"
+        Me.SaveBudgetBTN.Text = "Load File"
         Me.SaveBudgetBTN.UseVisualStyleBackColor = True
         '
         'Chart1
@@ -695,16 +698,28 @@ Partial Class CreateEditBgt
         Me.TabControl1.Size = New System.Drawing.Size(608, 456)
         Me.TabControl1.TabIndex = 0
         '
-        'CreateEditBgt
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(3, 3)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(594, 20)
+        Me.TextBox1.TabIndex = 39
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(606, 455)
         Me.Controls.Add(Me.TabControl1)
-        Me.Name = "CreateEditBgt"
+        Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Budget Helper"
         Me.TabPage3.ResumeLayout(False)
+        Me.TabPage3.PerformLayout()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
@@ -769,4 +784,6 @@ Partial Class CreateEditBgt
     Friend WithEvents HomeBtn As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
 End Class
