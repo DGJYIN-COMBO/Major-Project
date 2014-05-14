@@ -1,7 +1,7 @@
 ﻿Imports System.Data.OleDb
 Imports System.Windows.Forms.DataVisualization.Charting
 
-Public Class Form1
+Public Class CreateEditForm
 
     '~~> Code required to browse for the Access Database File
     Private Sub Button1_Click(ByVal sender As System.Object, _
@@ -25,9 +25,9 @@ Public Class Form1
         End With
     End Sub
 
-    '~~> Code to generate the chart
-    Private Sub Button2_Click(ByVal sender As System.Object, _
-    ByVal e As System.EventArgs) Handles Button2.Click
+   
+
+    Private Sub HomeBtn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HomeBtn.Click
         '~~> Connection String to connect to the access Database
         '~~> If you are planning to use SQL Database then 
         '~~> please visit www.connectionstrings.com for an
