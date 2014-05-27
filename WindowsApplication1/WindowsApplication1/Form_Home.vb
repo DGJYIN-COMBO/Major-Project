@@ -12,7 +12,7 @@
     End Sub
 
     Private Sub LoadBudgetBTN_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LoadBudgetBTN.Click
-        BudgetViewer.Show()
+        Form_Options.Show()
         Me.Close()
     End Sub
 End Class

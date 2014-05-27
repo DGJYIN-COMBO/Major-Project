@@ -1,4 +1,4 @@
-﻿Public Class BudgetViewer
+﻿Public Class Form_Options
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HomeBtn.Click
         Form_Home.Show()
@@ -6,7 +6,7 @@
     End Sub
 
     Private Sub LoadBudgetBTN_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditBtn.Click
-        
+
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DeleteBtn.Click

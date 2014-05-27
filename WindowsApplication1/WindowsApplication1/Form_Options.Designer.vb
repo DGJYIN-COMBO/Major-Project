@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class BudgetViewer
+Partial Class Form_Options
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -77,7 +77,7 @@ Partial Class BudgetViewer
         Me.Button1.Text = "View Budget"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'BudgetViewer
+        'Form_Options
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -87,7 +87,7 @@ Partial Class BudgetViewer
         Me.Controls.Add(Me.DeleteBtn)
         Me.Controls.Add(Me.EditBtn)
         Me.Controls.Add(Me.ListBox1)
-        Me.Name = "BudgetViewer"
+        Me.Name = "Form_Options"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Budget Helper"
         Me.ResumeLayout(False)
